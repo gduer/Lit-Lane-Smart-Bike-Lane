@@ -229,12 +229,12 @@ void loop() {
               leds2[led + 1].fadeToBlackBy(DimArray[dimCount]);
               dimCount = dimCount + 1;}
               dimCount = 0;
-              }//Think about changing the location of this to stop the flickering.
+              }
           else if(currentMillis - previousMillis < blinkspeed){
             for(int led = ledValue2-3; led < ledValue2+7; led++) { 
               leds[led] = CRGB::Black; 
               leds2[led + 1] = CRGB::Black;} 
-              }//Think about changing the location of this to stop the flickering. 
+              }
           else{
               previousMillis = currentMillis;
               }}
